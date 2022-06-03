@@ -101,7 +101,7 @@ The function must accept a non-negative integer. If it is zero, it just returns 
 
  ---
 
- ### Courses: ### 
+ ## Courses: ## 
 
  * HTML and CSS tutorials [schoolsw3](https://schoolsw3.com/html/) (completed)
  * JavaScript manual on [learnjavascript.ru](https://learn.javascript.ru/) (completed)
