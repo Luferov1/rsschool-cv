@@ -78,61 +78,61 @@
         </p>
         <div class="code">
             <pre>
-            function formatDuration (seconds) {
+        function formatDuration (seconds) {
 
-                if (seconds == 0) return 'now';
-                let second = 0, minute = 0, hour = 0, day = 0, year = 0;
-                let result = seconds;
-                let str = '';
+            if (seconds == 0) return 'now';
+            let second = 0, minute = 0, hour = 0, day = 0, year = 0;
+            let result = seconds;
+            let str = '';
           
-                for (; result >= 31536000; year++) {
-                  result -= 31536000;
-                }
-                for (; result >= 86400; day++) {
-                  result -= 86400;
-                }
-                for (; result >= 3600; hour++) {
-                  result -= 3600;
-                }
-                for (; result >= 60; minute++) {
-                  result -= 60;
-                }
-                second = result;
+            for (; result >= 31536000; year++) {
+                result -= 31536000;
+            }
+            for (; result >= 86400; day++) {
+                result -= 86400;
+            }
+            for (; result >= 3600; hour++) {
+                result -= 3600;
+            }
+            for (; result >= 60; minute++) {
+                result -= 60;
+            }
+            second = result;
              
-                year = `${year} year`;
-                day = `${day} day`;
-                hour = `${hour} hour`;
-                minute = `${minute} minute`
-                second = `${second} second`;
-                let arr = [year, day, hour, minute, second];
+            year = `${year} year`;
+            day = `${day} day`;
+            hour = `${hour} hour`;
+            minute = `${minute} minute`
+            second = `${second} second`;
+            let arr = [year, day, hour, minute, second];
           
-                for (let i = 0; i < arr.length; i++) {
+            for (let i = 0; i < arr.length; i++) {
           
-                  if ( arr[i].startsWith('0') ) {
-                    arr.splice(i, 1);
-                    i--;
-                  }
-                } 
-                for (let i = 0; i < arr.length; i++) {
-          
-                  if ( !arr[i].startsWith('1 ') ) arr[i] += 's';
+                if ( arr[i].startsWith('0') ) {
+                arr.splice(i, 1);
+                i--;
                 }
+            } 
+            for (let i = 0; i < arr.length; i++) {
           
-                if (arr.length == 1) {
-                  str = arr[0];
+                if ( !arr[i].startsWith('1 ') ) arr[i] += 's';
+            }
           
-                } else if (arr.length == 2) {
-                  str = `${arr[0]} and ${arr[1]}` }
+            if (arr.length == 1) {
+                str = arr[0];
           
-                else {
-                  for (let i = 0; i < arr.length - 2; i++ ) {
-                  str += `${arr[i]}, `;
-                }
+            } else if (arr.length == 2) {
+                str = `${arr[0]} and ${arr[1]}` }
           
-                str += `${arr[arr.length -2]} and ${arr[arr.length - 1]}`
-                }
-                return str;
-              }
+            else {
+                for (let i = 0; i < arr.length - 2; i++ ) {
+                str += `${arr[i]}, `;
+            }
+          
+            str += `${arr[arr.length -2]} and ${arr[arr.length - 1]}`
+            }
+            return str;
+            }
             </pre>
         </div>
         <hr>
