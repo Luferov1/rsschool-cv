@@ -98,3 +98,22 @@ The function must accept a non-negative integer. If it is zero, it just returns 
       }
       return str;
     }
+ ---
+
+ ## Courses: ##
+
+ * HTML and CSS tutorials [schoolsw3](https://schoolsw3.com/html/) (completed)
+ * JavaScript manual on [learnjavascript.ru](https://learn.javascript.ru/) (completed)
+ * [**Mimo**](https://getmimo.com/): Web Development (27%)
+ * [**Codewars**](https://www.codewars.com) rank: **6 kuy**
+ * **RS School** Course «JavaScript/Front-end. Stage 0» (in progress)
+
+---
+
+## Languages: ##
+
+* **English** - Intermediate/Upper-intermediate
+* **Russian** - Native
+* **Belarussian** - Intermediate
+
+
