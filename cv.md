@@ -36,3 +36,64 @@ I consider that I have enough personal and work skills and to get this job.
 
 ---
 
+## Code example ##
+
+**Human readable duration format** 
+_Your task in order to complete this Kata is to write a function which formats a duration, given as a number of seconds, in a human-friendly way.
+The function must accept a non-negative integer. If it is zero, it just returns "now". Otherwise, the duration is expressed as a combination of years, days, hours, minutes and seconds._
+
+    function formatDuration (seconds) {
+
+      if (seconds == 0) return 'now';
+      let second = 0, minute = 0, hour = 0, day = 0, year = 0;
+      let result = seconds;
+      let str = '';
+
+      for (; result >= 31536000; year++) {
+        result -= 31536000;
+      }
+      for (; result >= 86400; day++) {
+        result -= 86400;
+      }
+      for (; result >= 3600; hour++) {
+        result -= 3600;
+      }
+      for (; result >= 60; minute++) {
+        result -= 60;
+      }
+      second = result;
+   
+      year = `${year} year`;
+      day = `${day} day`;
+      hour = `${hour} hour`;
+      minute = `${minute} minute`
+      second = `${second} second`;
+      let arr = [year, day, hour, minute, second];
+
+      for (let i = 0; i < arr.length; i++) {
+
+        if ( arr[i].startsWith('0') ) {
+          arr.splice(i, 1);
+          i--;
+        }
+      } 
+      for (let i = 0; i < arr.length; i++) {
+
+        if ( !arr[i].startsWith('1 ') ) arr[i] += 's';
+      }
+
+      if (arr.length == 1) {
+        str = arr[0];
+
+      } else if (arr.length == 2) {
+        str = `${arr[0]} and ${arr[1]}` }
+
+      else {
+        for (let i = 0; i < arr.length - 2; i++ ) {
+        str += `${arr[i]}, `;
+      }
+
+      str += `${arr[arr.length -2]} and ${arr[arr.length - 1]}`
+      }
+      return str;
+    }
