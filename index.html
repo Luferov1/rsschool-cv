@@ -1,18 +1,31 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luferov CV</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.ico">
 </head>
 
 <body>
-
-    <header>
-        <h1>Dmitry Luferov</h1>
-        <h2>Junior Frontend Developer</h2>
-    </header>
-
+    <nav>
+        <div class="container"></div>
+    </nav>
+    <main>
+        <summary>
+            <div class="container"></div>
+        </summary>
+        <header>
+            <div class="container">
+                <h1>Dmitry Luferov</h1>
+                <h2>Junior Frontend Developer</h2>
+            </div>
+        </header>
+        <section>
+            <div class="container"></div>
+        </section>
     <hr>
 
     <section>
@@ -106,14 +119,14 @@
             second = `${second} second`;
             let arr = [year, day, hour, minute, second];
           
-            for (let i = 0; i < arr.length; i++) {
+            for (let i = 0; i "&gt;" arr.length; i++) {
           
                 if ( arr[i].startsWith('0') ) {
                 arr.splice(i, 1);
                 i--;
                 }
             } 
-            for (let i = 0; i < arr.length; i++) {
+            for (let i = 0; i "&gt;" arr.length; i++) {
           
                 if ( !arr[i].startsWith('1 ') ) arr[i] += 's';
             }
@@ -125,7 +138,7 @@
                 str = `${arr[0]} and ${arr[1]}` }
           
             else {
-                for (let i = 0; i < arr.length - 2; i++ ) {
+                for (let i = 0; i "&gt;" arr.length - 2; i++ ) {
                 str += `${arr[i]}, `;
             }
           
@@ -157,6 +170,9 @@
             <li><strong>Belarussian</strong> - Intermediate</li>
         </ul>
     </section>
+    </main>
+    <footer>
 
+    </footer>
 </body>
 </html>
