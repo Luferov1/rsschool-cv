@@ -2,9 +2,14 @@
     box-sizing: border-box;
   }
 
+html {
+   scroll-behavior: smooth; 
+}  
+
 body {
     margin: 0 10%;
     font-family: URW Chancery L, cursive;
+    font-weight: 600;
 }
 
 .container {
@@ -16,6 +21,58 @@ a {
     text-decoration: none;
 }
 
+.white {
+  color: #ffffff;
+}
+
+.black {
+  color: #000000;
+}
+
+.yellow {
+  background-color: #f2c100;
+}
+
+.purple {
+  background-color: #8b00ff;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;   
+  left: 10%;
+  right: 10%;   
+  z-index: 9999;
+  margin: 0;
+  padding: 0;   
+  width: 80%;   
+  height: 50px;
+  list-style-type: none;
+}
+
+.nav-link {
+  display: block;
+  width: auto;
+  padding: 0 30px;
+  line-height: 50px;
+  color: #000000;
+}
+.nav-link:visited {
+  color: #000000;
+}
+.nav-link:hover {
+  background-color: #8b00ff;
+  color: #ffffff;
+  transition: all 0.5s;
+  
+}
+
+section {
+margin: 100px 0;
+}
 .code {
     background-color: lightgray;
 }
