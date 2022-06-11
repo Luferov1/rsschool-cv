@@ -70,9 +70,25 @@ a {
   
 }
 
-section {
-margin: 100px 0;
+main {
+  margin: 100px 0;
+  display: flex;
+  
 }
+
+aside {
+  flex: 40%;
+}
+
+summary {
+  flex: 60%;
+}
+
+.avatar {
+  width: 300px;
+  height: 300px;
+}
+
 .code {
-    background-color: lightgray;
+  background-color: lightgray;
 }
