@@ -31,7 +31,7 @@ body {
   width: 80%;   
   height: 50px;
   list-style-type: none;
-  background-color: #f2c100;
+  background-color: #f7bc13;
 }
 
 .nav-link {
@@ -39,29 +39,31 @@ body {
   width: auto;
   padding: 0 30px;
   line-height: 50px;
-  color: #000000;
+  color: #cf0a10;
   text-decoration: none;
+  font-size: 30px;
 }
 .nav-link:visited {
-  color: #000000;
+  color: #cf0a10;
 }
 .nav-link:hover {
-  background-color: #8b00ff;
-  color: #ffffff;
+  background-color: #f6efe3;
+  color: #095d6a;
   transition: all 0.5s;
   
 }
 
 main {
   display: flex;
-  background-color: #8b00ff;
-  color: #ffffff; 
+  flex-wrap: wrap;
+  background-color: #f6efe3;
+  color: #095d6a; 
 }
 
 aside {
   flex: 40%;
   padding: 100px;
-  border-right: 10px solid #f2c100;
+  border-right: 10px solid #f7bc13;
 }
 
 summary {
@@ -79,19 +81,21 @@ section {
 }
 
 section h1 {
-  background-color: #f2c100;
-  color: #000000;
+  background-color: #f7bc13;
+  color: #cf0a10;
   display: inline;
   width: auto;
   padding: 5px;
   font-size: 50px;
+  border-radius: 20px;
 }
 section h2 {
-  background-color: #f2c100;
-  color: #000000;
+  background-color: #f7bc13;
+  color: #cf0a10;
   display: inline;
   width: auto;
   padding: 5px;
+  border-radius: 20px;
 }
 
 section ul {
@@ -104,16 +108,55 @@ section li {
   padding: 20px 0 0 0;
 }
 
+section a {
+  text-decoration: none;
+}
 section span {
   padding: 0 5px;
-  color: #000000;
-  background-color: #f2c100;
+  color: #cf0a10;
+  background-color: #f7bc13;
+  border-radius: 20px;
 }
 
 .code div {
-  font-family: 'Times New Roman', Times, serif;
   font-size: 15px;
   padding: 40px;
   background-color: #000000;
   color: #7fff00;
+}
+footer {
+  display: flex;
+  background-color: #f7bc13;
+  padding: 10px 20px 0 20px;
+  justify-content: space-between;
+}
+
+.first {
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+
+.second {
+  width: 60px;
+  height: 40px;
+  padding-bottom: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #cf0a10;
+  line-height: 20px;
+
+}
+
+footer div {
+  display: block;
+  color: #cf0a10;
+  background-color: #f7bc13;
+  font-size: 20px;
+}
+
+footer span {
+  padding-left: 10px;
 }
