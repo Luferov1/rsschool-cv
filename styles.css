@@ -55,7 +55,6 @@ body {
 
 main {
   display: flex;
-  flex-wrap: wrap;
   background-color: #f6efe3;
   color: #095d6a; 
 }
@@ -160,3 +159,4 @@ footer div {
 footer span {
   padding-left: 10px;
 }
+
