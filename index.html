@@ -69,7 +69,7 @@
                 </section>
             </div>
         </aside>
-        <summary>
+        <article>
             <div class="container">
                 <section>           
                     <h1>Dmitry Luferov</h1>
@@ -134,110 +134,110 @@
                         <div>
                             function formatDuration (seconds) {
                             <br>
-                            &nbsp if (seconds == 0) return 'now';
+                            &nbsp;; if (seconds == 0) return 'now';
                             <br>
-                            &nbsp let second = 0, minute = 0, hour = 0, day = 0, year = 0;
+                            &nbsp;; let second = 0, minute = 0, hour = 0, day = 0, year = 0;
                             <br>
-                            &nbsp let result = seconds;
+                            &nbsp;; let result = seconds;
                             <br>
-                            &nbsp let str = '';
+                            &nbsp;; let str = '';
                             <br>
                             <br>   
-                            &nbsp for (; result >= 31536000; year++) {
+                            &nbsp; for (; result >= 31536000; year++) {
                             <br>
-                            &nbsp&nbsp&nbsp result -= 31536000;
+                            &nbsp;&nbsp;&nbsp; result -= 31536000;
                             <br>
-                            &nbsp }
-                            <br>
-                            <br>
-                            &nbsp for (; result >= 86400; day++) {
-                            <br>
-                            &nbsp&nbsp&nbsp result -= 86400;
-                            <br>
-                            &nbsp }
+                            &nbsp; }
                             <br>
                             <br>
-                            &nbsp for (; result >= 3600; hour++) {
+                            &nbsp; for (; result >= 86400; day++) {
                             <br>
-                            &nbsp&nbsp&nbsp result -= 3600;
+                            &nbsp;&nbsp;&nbsp; result -= 86400;
                             <br>
-                            &nbsp }
-                            <br>
-                            <br>
-                            &nbsp for (; result >= 60; minute++) {
-                            <br>
-                            &nbsp&nbsp&nbsp result -= 60;
-                            <br>
-                            &nbsp }
+                            &nbsp; }
                             <br>
                             <br>
-                            &nbsp second = result;
+                            &nbsp; for (; result >= 3600; hour++) {
                             <br>
-                            &nbsp year = `${year} year`;
+                            &nbsp;&nbsp;&nbsp; result -= 3600;
                             <br>
-                            &nbsp day = `${day} day`;
-                            <br>
-                            &nbsp hour = `${hour} hour`;
-                            <br>
-                            &nbsp minute = `${minute} minute`
-                            <br>
-                            &nbsp second = `${second} second`;
-                            <br>
-                            &nbsp let arr = [year, day, hour, minute, second];
+                            &nbsp; }
                             <br>
                             <br>
-                            &nbsp for (let i = 0; i "&gt;" arr.length; i++) {
+                            &nbsp; for (; result >= 60; minute++) {
+                            <br>
+                            &nbsp;&nbsp;&nbsp; result -= 60;
+                            <br>
+                            &nbsp; }
+                            <br>
+                            <br>
+                            &nbsp; second = result;
+                            <br>
+                            &nbsp; year = `${year} year`;
+                            <br>
+                            &nbsp; day = `${day} day`;
+                            <br>
+                            &nbsp; hour = `${hour} hour`;
+                            <br>
+                            &nbsp; minute = `${minute} minute`
+                            <br>
+                            &nbsp; second = `${second} second`;
+                            <br>
+                            &nbsp; let arr = [year, day, hour, minute, second];
+                            <br>
+                            <br>
+                            &nbsp; for (let i = 0; i "&gt;" arr.length; i++) {
                             <br>
                             <br>  
-                            &nbsp&nbsp&nbsp if ( arr[i].startsWith('0') ) {
+                            &nbsp;&nbsp;&nbsp; if ( arr[i].startsWith('0') ) {
                             <br>
-                            &nbsp&nbsp&nbsp&nbsp&nbsp arr.splice(i, 1);
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; arr.splice(i, 1);
                             <br>
-                            &nbsp&nbsp&nbsp&nbsp&nbsp i--;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i--;
                             <br>
-                            &nbsp&nbsp&nbsp }
+                            &nbsp;&nbsp;&nbsp; }
                             <br>
                             <br>
-                            &nbsp }
+                            &nbsp; }
                             <br>
                             <br> 
-                            &nbsp for (let i = 0; i "&gt;" arr.length; i++) {
+                            &nbsp; for (let i = 0; i "&gt;" arr.length; i++) {
                             <br>
                             <br>
-                            &nbsp&nbsp&nbsp if ( !arr[i].startsWith('1 ') ) arr[i] += 's';
+                            &nbsp;&nbsp;&nbsp; if ( !arr[i].startsWith('1 ') ) arr[i] += 's';
                             <br>
                             <br>
-                            &nbsp }
+                            &nbsp; }
                             <br>
                             <br>
-                            &nbsp if (arr.length == 1) {
+                            &nbsp; if (arr.length == 1) {
                             <br>
-                            &nbsp&nbsp&nbsp str = arr[0];
+                            &nbsp;&nbsp;&nbsp; str = arr[0];
                             <br>
-                            &nbsp } else if (arr.length == 2) {
+                            &nbsp; } else if (arr.length == 2) {
                             <br>
-                            &nbsp&nbsp&nbsp str = `${arr[0]} and ${arr[1]}` }
+                            &nbsp;&nbsp;&nbsp; str = `${arr[0]} and ${arr[1]}` }
                             <br>
-                            &nbsp else {
+                            &nbsp; else {
                             <br>
-                            &nbsp&nbsp&nbsp for (let i = 0; i "&gt;" arr.length - 2; i++ ) {
+                            &nbsp;&nbsp;&nbsp; for (let i = 0; i "&gt;" arr.length - 2; i++ ) {
                             <br>
-                            &nbsp&nbsp&nbsp&nbsp&nbsp str += `${arr[i]}, `;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; str += `${arr[i]}, `;
                             <br>
-                            &nbsp&nbsp&nbsp }
+                            &nbsp;&nbsp;&nbsp; }
                             <br>
-                            &nbsp str += `${arr[arr.length -2]} and ${arr[arr.length - 1]}`
+                            &nbsp; str += `${arr[arr.length -2]} and ${arr[arr.length - 1]}`
                             <br>
-                            &nbsp }
+                            &nbsp; }
                             <br>
                             <br>
-                            &nbsp return str;
+                            &nbsp; return str;
                             <br>
-                            &nbsp }
+                            &nbsp; }
                         </div>
                 </section>
             </div>
-        </summary>
+        </article>
     </main>
     <footer>
         <div>
