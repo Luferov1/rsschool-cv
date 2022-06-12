@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/favicon.ico">
 </head>
-
 <body>
     <header>
         <nav>
             <div class="container">
-                <ul class="nav-list yellow">
+                <ul class="nav-list">
                     <li class="nav item"><a href="#contacts" class="nav-link">Contacts</a></li>
                     <li class="nav item"><a href="#courses" class="nav-link">Courses</a></li>
                     <li class="nav item"><a href="#languages" class="nav-link">Languages</a></li>
@@ -24,164 +23,224 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="white">
         <aside>
             <div class="container">
-                <img src="assets/img/avatar.jpg" alt="avatar" class="avatar">
                 <section>
-                    <h2 id="contacts">Contact information:</h2>
-                    <p>
-                        <strong>Email: </strong>luferov.dmitry@gmail.com
-                        <br>
-                        <strong>Telegram: </strong> @Luferov1
-                        <br>
-                        <a href="https://www.instagram.com/luferov1/?hl=ru"><strong>Instagram</strong></a>
-                    </p>
+                <img src="assets/img/avatar.jpg" alt="avatar" class="avatar">
+                </section>
+                <section id="contacts">
+                    <h2>Contact information:</h2>
+                    <ul>
+                        <li>
+                        <span>Email:</span> luferov.dmitry@gmail.com
+                        </li>
+                        <li>
+                        <span>Telegram:</span> @Luferov1
+                        </li>
+                        <li>
+                        <span>Instagram:</span> luferov1
+                        </li>
+                    </ul>
+                </section>
+                <section id="courses">
+                    <h2>Courses:</h2>
+                    <ul>
+                        <li><a href=https://schoolsw3.com/html/index.php><span>HTML</span></a> and 
+                        <a href="https://schoolsw3.com/css/index.php"><span>CSS</span></a> tutorials
+                        (completed)</li>
+                        <li><a href="https://learn.javascript.ru/"><span>JavaScript</span></a> 
+                        manual (completed)</li>
+                        <li><a href="https://getmimo.com/"><span>Mimo:</span></a> 
+                        Web Development (30%)</li>
+                        <li><a href="https://www.codewars.com"><span>Codewars</span></a>
+                        rank: 6 kuy</li>
+                        <li><a href="https://rs.school/"><span>RS School</span></a> Course «JavaScript/Front-end. 
+                        Stage 0» (in progress)</li>
+                    </ul>
+                </section>
+                <section id="languages">
+                    <h2>Languages:</h2>
+                    <ul>
+                        <li><span>English</span> - Intermediate/Upper-intermediate</li>
+                        <li><span>Russian</span> - Native</li>
+                        <li><span>Belarussian</span> - Intermediate</li>
+                    </ul>
+                </section>
             </div>
         </aside>
         <summary>
-            <div class="container">           
-                <h1>Dmitry Luferov</h1>
-                <h2>Junior Frontend Developer</h2>
+            <div class="container">
+                <section>           
+                    <h1>Dmitry Luferov</h1>
+                </section>
+                <section>
+                    <h2>Junior Frontend Developer</h2>
+                </section>
+                <section id="summary">
+                    <h2>About me:</h2>
+                    <p>
+                        My name is Dmitry. I am 20 years old. I live in Minsk, Belarus. 
+                        I am studying at the BSUIR as an engineer in radio engineering. 
+                        <br>
+                        <br>
+                        When I turned 20, I decided to change my speciality. 
+                        I chose to study Software engineering 
+                        because I think it’s very prestigious and modern job. 
+                        I am an ambitious person and this job suits me. 
+                        Working in a team isn’t a problem for me 
+                        because I have enough communicative and leadership skills. 
+                        My hobby is playing football, so I know what a team is and 
+                        how important is it to help each other 
+                        and to make collective decisions. 
+                        I am cheerful and open-minded person, 
+                        so that’s another reason why I can easily join any team.
+                        <br>
+                        <br>
+                        I met programming at school. 
+                        Also, I had 2 semesters of programming at university. 
+                        I took a small part mobile application development in 2021. 
+                        Now I am studying in RS School.
+                        <br>
+                        <br>
+                        I consider that I have enough personal 
+                        and work skills and to get this job.
+                    </p>
+                </section>
+                <section id="skills">
+                    <h2>Skills and Proficiency:</h2>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript basics</li>
+                        <li>Git</li>
+                        <li>Microsoft office Word</li>
+                        <li>Adobe Photoshop</li>
+                    </ul>
+                </section>
+                <section id="code" class="code">
+                    <h2>Code example:</h2>
+                        <h3>
+                            Human readable duration format
+                        </h3>
+                        <p>Your task in order to complete this Kata is 
+                        to write a function which formats a duration, 
+                        given as a number of seconds, in a human-friendly way.
+                        The function must accept a non-negative integer. 
+                        If it is zero, it just returns "now". 
+                        Otherwise, the duration is expressed as a 
+                        combination of years, days, hours, minutes and seconds.
+                        </p>
+                        <div>
+                            function formatDuration (seconds) {
+                            <br>
+                            &nbsp if (seconds == 0) return 'now';
+                            <br>
+                            &nbsp let second = 0, minute = 0, hour = 0, day = 0, year = 0;
+                            <br>
+                            &nbsp let result = seconds;
+                            <br>
+                            &nbsp let str = '';
+                            <br>
+                            <br>   
+                            &nbsp for (; result >= 31536000; year++) {
+                            <br>
+                            &nbsp&nbsp&nbsp result -= 31536000;
+                            <br>
+                            &nbsp }
+                            <br>
+                            <br>
+                            &nbsp for (; result >= 86400; day++) {
+                            <br>
+                            &nbsp&nbsp&nbsp result -= 86400;
+                            <br>
+                            &nbsp }
+                            <br>
+                            <br>
+                            &nbsp for (; result >= 3600; hour++) {
+                            <br>
+                            &nbsp&nbsp&nbsp result -= 3600;
+                            <br>
+                            &nbsp }
+                            <br>
+                            <br>
+                            &nbsp for (; result >= 60; minute++) {
+                            <br>
+                            &nbsp&nbsp&nbsp result -= 60;
+                            <br>
+                            &nbsp }
+                            <br>
+                            <br>
+                            &nbsp second = result;
+                            <br>
+                            &nbsp year = `${year} year`;
+                            <br>
+                            &nbsp day = `${day} day`;
+                            <br>
+                            &nbsp hour = `${hour} hour`;
+                            <br>
+                            &nbsp minute = `${minute} minute`
+                            <br>
+                            &nbsp second = `${second} second`;
+                            <br>
+                            &nbsp let arr = [year, day, hour, minute, second];
+                            <br>
+                            <br>
+                            &nbsp for (let i = 0; i "&gt;" arr.length; i++) {
+                            <br>
+                            <br>  
+                            &nbsp&nbsp&nbsp if ( arr[i].startsWith('0') ) {
+                            <br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp arr.splice(i, 1);
+                            <br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp i--;
+                            <br>
+                            &nbsp&nbsp&nbsp }
+                            <br>
+                            <br>
+                            &nbsp }
+                            <br>
+                            <br> 
+                            &nbsp for (let i = 0; i "&gt;" arr.length; i++) {
+                            <br>
+                            <br>
+                            &nbsp&nbsp&nbsp if ( !arr[i].startsWith('1 ') ) arr[i] += 's';
+                            <br>
+                            <br>
+                            &nbsp }
+                            <br>
+                            <br>
+                            &nbsp if (arr.length == 1) {
+                            <br>
+                            &nbsp&nbsp&nbsp str = arr[0];
+                            <br>
+                            &nbsp } else if (arr.length == 2) {
+                            <br>
+                            &nbsp&nbsp&nbsp str = `${arr[0]} and ${arr[1]}` }
+                            <br>
+                            &nbsp else {
+                            <br>
+                            &nbsp&nbsp&nbsp for (let i = 0; i "&gt;" arr.length - 2; i++ ) {
+                            <br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp str += `${arr[i]}, `;
+                            <br>
+                            &nbsp&nbsp&nbsp }
+                            <br>
+                            &nbsp str += `${arr[arr.length -2]} and ${arr[arr.length - 1]}`
+                            <br>
+                            &nbsp }
+                            <br>
+                            <br>
+                            &nbsp return str;
+                            <br>
+                            &nbsp }
+                        </div>
+                </section>
             </div>
         </summary>
-    <!-- <hr>
-        <hr>
-        <h2>About myself:</h2>
-        <p>
-            My name is Dmitry. I am 20 years old. I live in Minsk, Belarus. 
-            I am studying at the BSUIR as an engineer in radio engineering. 
-            <br>
-            <br>
-            When I turned 20, I decided to change my speciality. 
-            I chose to study Software engineering 
-            because I think it’s very prestigious and modern job. 
-            I am an ambitious person and this job suits me. 
-            Working in a team isn’t a problem for me 
-            because I have enough communicative and leadership skills. 
-            My hobby is playing football, so I know what a team is and 
-            how important is it to help each other 
-            and to make collective decisions. 
-            I am cheerful and open-minded person, 
-            so that’s another reason why I can easily join any team.
-            <br>
-            <br>
-            I met programming at school. 
-            Also, I had 2 semesters of programming at university. 
-            I took a small part mobile application development in 2021. 
-            Now I am studying in RS School.
-            <br>
-            <br>
-            I consider that I have enough personal 
-            and work skills and to get this job.
-        </p>
-        <hr>
-        <h2>Skills and Proficiency:</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript basics</li>
-            <li>Git, GitHub</li>
-            <li>Microsoft office Word</li>
-            <li>Adobe Photoshop</li>
-        </ul>
-        <hr>
-        <h2>Code example:</h2>
-        <p><strong>Human readable duration format</strong>
-        <br>
-        <br>
-        <em>Your task in order to complete this Kata is 
-            to write a function which formats a duration, 
-            given as a number of seconds, in a human-friendly way.
-            The function must accept a non-negative integer. 
-            If it is zero, it just returns "now". 
-            Otherwise, the duration is expressed as a 
-            combination of years, days, hours, minutes and seconds.</em>
-        </p>
-        <div class="code">
-            <pre>
-        function formatDuration (seconds) {
-
-            if (seconds == 0) return 'now';
-            let second = 0, minute = 0, hour = 0, day = 0, year = 0;
-            let result = seconds;
-            let str = '';
-          
-            for (; result >= 31536000; year++) {
-                result -= 31536000;
-            }
-            for (; result >= 86400; day++) {
-                result -= 86400;
-            }
-            for (; result >= 3600; hour++) {
-                result -= 3600;
-            }
-            for (; result >= 60; minute++) {
-                result -= 60;
-            }
-            second = result;
-             
-            year = `${year} year`;
-            day = `${day} day`;
-            hour = `${hour} hour`;
-            minute = `${minute} minute`
-            second = `${second} second`;
-            let arr = [year, day, hour, minute, second];
-          
-            for (let i = 0; i "&gt;" arr.length; i++) {
-          
-                if ( arr[i].startsWith('0') ) {
-                arr.splice(i, 1);
-                i--;
-                }
-            } 
-            for (let i = 0; i "&gt;" arr.length; i++) {
-          
-                if ( !arr[i].startsWith('1 ') ) arr[i] += 's';
-            }
-          
-            if (arr.length == 1) {
-                str = arr[0];
-          
-            } else if (arr.length == 2) {
-                str = `${arr[0]} and ${arr[1]}` }
-          
-            else {
-                for (let i = 0; i "&gt;" arr.length - 2; i++ ) {
-                str += `${arr[i]}, `;
-            }
-          
-            str += `${arr[arr.length -2]} and ${arr[arr.length - 1]}`
-            }
-            return str;
-            }
-            </pre>
-        </div>
-        <hr>
-        <h2>Courses:</h2>
-        <ul>
-            <li>HTML and CSS tutorials <a href="https://schoolsw3.com/html/">
-            schoolsw3</a>(completed)</li>
-            <li>JavaScript manual on <a href="https://learn.javascript.ru/">
-            learnjavascript.ru</a>(completed)</li>
-            <li><a href="https://getmimo.com/"><strong>Mimo</strong></a>
-            : Web Development (27%)</li>
-            <li><a href="https://www.codewars.com"><strong>Codewars</strong></a>
-            rank: <strong>6 kuy</strong></li>
-            <li><strong>RS School</strong>Course «JavaScript/Front-end. 
-            Stage 0» (in progress)</li>
-        </ul>
-        <hr>
-        <h2>Languages:</h2>
-        <ul>
-            <li><strong>English</strong> - Intermediate/Upper-intermediate</li>
-            <li><strong>Russian</strong> - Native</li>
-            <li><strong>Belarussian</strong> - Intermediate</li>
-        </ul>
-    </section> -->
     </main>
     <footer>
-
+        
     </footer>
 </body>
 </html>

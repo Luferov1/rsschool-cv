@@ -1,41 +1,21 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
   }
 
 html {
-   scroll-behavior: smooth; 
+  scroll-behavior: smooth; 
 }  
 
 body {
-    margin: 0 10%;
-    font-family: URW Chancery L, cursive;
-    font-weight: 600;
+  margin: 0 10%;
+  font-family: URW Chancery L, cursive;
+  font-weight: 600;
 }
 
 .container {
-    max-width: 1440px;
-    margin: 0 auto;
+  max-width: 1440px;
+  margin: 0 auto;
   }
-
-a {
-    text-decoration: none;
-}
-
-.white {
-  color: #ffffff;
-}
-
-.black {
-  color: #000000;
-}
-
-.yellow {
-  background-color: #f2c100;
-}
-
-.purple {
-  background-color: #8b00ff;
-}
 
 .nav-list {
   display: flex;
@@ -51,6 +31,7 @@ a {
   width: 80%;   
   height: 50px;
   list-style-type: none;
+  background-color: #f2c100;
 }
 
 .nav-link {
@@ -59,6 +40,7 @@ a {
   padding: 0 30px;
   line-height: 50px;
   color: #000000;
+  text-decoration: none;
 }
 .nav-link:visited {
   color: #000000;
@@ -71,24 +53,67 @@ a {
 }
 
 main {
-  margin: 100px 0;
   display: flex;
-  
+  background-color: #8b00ff;
+  color: #ffffff; 
 }
 
 aside {
   flex: 40%;
+  padding: 100px;
+  border-right: 10px solid #f2c100;
 }
 
 summary {
   flex: 60%;
+  padding: 100px;
 }
 
 .avatar {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 
-.code {
-  background-color: lightgray;
+section {
+  padding: 0 0 50px 0;
+}
+
+section h1 {
+  background-color: #f2c100;
+  color: #000000;
+  display: inline;
+  width: auto;
+  padding: 5px;
+  font-size: 50px;
+}
+section h2 {
+  background-color: #f2c100;
+  color: #000000;
+  display: inline;
+  width: auto;
+  padding: 5px;
+}
+
+section ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+}
+
+section li {
+  padding: 20px 0 0 0;
+}
+
+section span {
+  padding: 0 5px;
+  color: #000000;
+  background-color: #f2c100;
+}
+
+.code div {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  padding: 40px;
+  background-color: #000000;
+  color: #7fff00;
 }
