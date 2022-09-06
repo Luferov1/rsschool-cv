@@ -72,7 +72,7 @@
                 </section>
             </div>
         </aside>
-        <div>
+        <div class="second-part">
             <div class="container">
                 <section>           
                     <h2>Dmitry Luferov</h2>
@@ -134,30 +134,32 @@
                         Otherwise, the duration is expressed as a 
                         combination of years, days, hours, minutes and seconds.
                         </p>
-                        <code>
-                            function rgb(r, g, b){
-                                let result = [];
-                                const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
-                                for (let argument of arguments) {
-                                  if (argument &lt; 0) result.push('00');
-                                  else if (argument > 255) result.push('FF');
-                                  else {
-                                  let arr = [];
-                                  do {
-                                  let remainder = argument % 16;
-                                  argument = Math.floor(argument / 16);
-                                  arr.unshift(remainder);
-                                  } while (argument > 0);
-                                  for (let i = 0; i &lt; arr.length; i++) {
-                                    if (arr[i] > 9) arr[i] = letters[arr[i] - 10];
-                                  }
-                                  if (arr.length === 1) arr.unshift('0');
-                                  result.push(arr.join('')); 
-                                  }
-                                }
-                                return result.join('');
-                              }
-                        </code>
+                        <pre class="code-div">
+                            <code>
+function rgb(r, g, b){
+    let result = [];
+    const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+    for (let argument of arguments) {
+    if (argument &lt; 0) result.push('00');
+    else if (argument > 255) result.push('FF');
+    else {
+    let arr = [];
+    do {
+    let remainder = argument % 16;
+    argument = Math.floor(argument / 16);
+    arr.unshift(remainder);
+    } while (argument > 0);
+    for (let i = 0; i &lt; arr.length; i++) {
+        if (arr[i] > 9) arr[i] = letters[arr[i] - 10];
+    }
+    if (arr.length === 1) arr.unshift('0');
+    result.push(arr.join('')); 
+    }
+    }
+    return result.join('');
+}
+                            </code>
+                        </pre>
                 </section>
             </div>
         </div>

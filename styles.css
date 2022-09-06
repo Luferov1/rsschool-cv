@@ -78,6 +78,11 @@ article {
 .avatar {
   width: 250px;
   height: 250px;
+  margin-bottom: 10px;
+}
+
+.second-part {
+  padding-left: 10%;
 }
 
 section {
@@ -122,9 +127,9 @@ section span {
   border-radius: 20px;
 }
 
-.code div {
-  font-size: 15px;
-  padding: 40px;
+.code-div {
+  width: 70%;
+  padding: 5%;
   background-color: #000000;
   color: #7fff00;
 }
