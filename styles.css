@@ -1,0 +1,167 @@
+@font-face {
+  font-family: Courgette-Regular;
+  src: url("assets/fonts/Courgette-Regular.ttf");
+ }
+
+* {
+  box-sizing: border-box;
+  }
+
+html {
+  scroll-behavior: smooth; 
+}  
+
+body {
+  margin: 0 10%;
+  font-family: 'Courgette', cursive;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  }
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;   
+  left: 10%;
+  right: 10%;   
+  z-index: 9999;
+  margin: 0;
+  padding: 0;   
+  width: 80%;   
+  height: 50px;
+  list-style-type: none;
+  background-color: #f7bc13;
+}
+
+.nav-link {
+  display: block;
+  width: auto;
+  padding: 0 30px;
+  line-height: 50px;
+  color: #cf0a10;
+  text-decoration: none;
+  font-size: 30px;
+}
+.nav-link:visited {
+  color: #cf0a10;
+}
+.nav-link:hover {
+  background-color: #f6efe3;
+  color: #095d6a;
+  transition: all 0.5s;
+  
+}
+
+main {
+  display: flex;
+  background-color: #f6efe3;
+  color: #095d6a; 
+}
+
+aside {
+  flex: 40%;
+  padding: 100px;
+  border-right: 10px solid #f7bc13;
+}
+
+article {
+  flex: 60%;
+  padding: 100px;
+}
+
+.avatar {
+  width: 250px;
+  height: 250px;
+}
+
+section {
+  padding: 0 0 50px 0;
+}
+
+section h1 {
+  background-color: #f7bc13;
+  color: #cf0a10;
+  display: inline;
+  width: auto;
+  padding: 5px;
+  font-size: 50px;
+  border-radius: 20px;
+}
+section h2 {
+  background-color: #f7bc13;
+  color: #cf0a10;
+  display: inline;
+  width: auto;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+section ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+}
+
+section li {
+  padding: 20px 0 0 0;
+}
+
+section a {
+  text-decoration: none;
+}
+section span {
+  padding: 0 5px;
+  color: #cf0a10;
+  background-color: #f7bc13;
+  border-radius: 20px;
+}
+
+.code div {
+  font-size: 15px;
+  padding: 40px;
+  background-color: #000000;
+  color: #7fff00;
+}
+footer {
+  display: flex;
+  background-color: #f7bc13;
+  padding: 10px 20px 0 20px;
+  justify-content: space-between;
+}
+
+.first {
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+
+.second {
+  width: 60px;
+  height: 40px;
+  padding-bottom: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #cf0a10;
+  line-height: 20px;
+
+}
+
+footer div {
+  display: block;
+  color: #cf0a10;
+  background-color: #f7bc13;
+  font-size: 20px;
+}
+
+footer span {
+  padding-left: 10px;
+}
+
