@@ -30,35 +30,40 @@
         <aside>
             <div class="container">
                 <div>
-                <img src="assets/img/avatar.jpg" alt="avatar" class="avatar">
+                    <img src="assets/img/avatar.jpg" alt="avatar" class="avatar">
                 </div>
                 <section id="contacts">
                     <h2>Contact information:</h2>
                     <ul>
                         <li>
-                        <span>Email:</span> luferov.dmitry@gmail.com
+                            <span>Email:</span> luferov.dmitry@gmail.com
                         </li>
                         <li>
-                        <span>Telegram:</span> @Luferov1
+                            <span>Telegram:</span> @Luferov1
                         </li>
-                        <li>
+                            <li>
                         <span>Instagram:</span> luferov1
-                        </li>
+                            </li>
                     </ul>
                 </section>
                 <section id="courses">
                     <h2>Courses:</h2>
                     <ul>
-                        <li><a href=https://schoolsw3.com/html/index.php target="_blank"><span>HTML</span></a> and 
-                        <a href="https://schoolsw3.com/css/index.php" target="_blank"><span>CSS</span></a> tutorials
+                        <li>
+                            <a href=https://schoolsw3.com/html/index.php target="_blank"><span>HTML</span></a> and 
+                            <a href="https://schoolsw3.com/css/index.php" target="_blank"><span>CSS</span></a> tutorials
                         (completed)</li>
-                        <li><a href="https://learn.javascript.ru/" target="_blank"><span>JavaScript</span></a> 
+                        <li>
+                            <a href="https://learn.javascript.ru/" target="_blank"><span>JavaScript</span></a> 
                         manual (completed)</li>
-                        <li><a href="https://getmimo.com/" target="_blank"><span>Mimo:</span></a> 
+                        <li>
+                            <a href="https://getmimo.com/" target="_blank"><span>Mimo:</span></a> 
                         Web Development (30%)</li>
-                        <li><a href="https://www.codewars.com" target="_blank"><span>Codewars</span></a>
+                        <li>
+                            <a href="https://www.codewars.com" target="_blank"><span>Codewars</span></a>
                         rank: 6 kuy</li>
-                        <li><a href="https://rs.school/" target="_blank"><span>RS School</span></a> Course «JavaScript/Front-end. 
+                        <li>
+                            <a href="https://rs.school/" target="_blank"><span>RS School</span></a> Course «JavaScript/Front-end. 
                         Stage 0» (in progress)</li>
                     </ul>
                 </section>
@@ -123,34 +128,32 @@
                 </section>
                 <section id="code" class="code">
                     <h2>Code example:</h2>
-                        <h3>
-                            Human readable duration format
-                        </h3>
-                        <p>Your task in order to complete this Kata is 
-                        to write a function which formats a duration, 
-                        given as a number of seconds, in a human-friendly way.
-                        The function must accept a non-negative integer. 
-                        If it is zero, it just returns "now". 
-                        Otherwise, the duration is expressed as a 
-                        combination of years, days, hours, minutes and seconds.
-                        </p>
-                        <pre class="code-div">
-                            <code>
+                    <h3>Human readable duration format</h3>
+                    <p>Your task in order to complete this Kata is 
+                    to write a function which formats a duration, 
+                    given as a number of seconds, in a human-friendly way.
+                    The function must accept a non-negative integer. 
+                    If it is zero, it just returns "now". 
+                    Otherwise, the duration is expressed as a 
+                    combination of years, days, hours, minutes and seconds.
+                    </p>
+                    <pre class="code-div">
+                        <code>
 function rgb(r, g, b){
     let result = [];
     const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
     for (let argument of arguments) {
     if (argument &lt; 0) result.push('00');
-    else if (argument > 255) result.push('FF');
+    else if (argument &gt; 255) result.push('FF');
     else {
     let arr = [];
     do {
     let remainder = argument % 16;
     argument = Math.floor(argument / 16);
     arr.unshift(remainder);
-    } while (argument > 0);
+    } while (argument &gt; 0);
     for (let i = 0; i &lt; arr.length; i++) {
-        if (arr[i] > 9) arr[i] = letters[arr[i] - 10];
+        if (arr[i] &gt; 9) arr[i] = letters[arr[i] - 10];
     }
     if (arr.length === 1) arr.unshift('0');
     result.push(arr.join('')); 
@@ -158,19 +161,23 @@ function rgb(r, g, b){
     }
     return result.join('');
 }
-                            </code>
-                        </pre>
+                        </code>
+                    </pre>
                 </section>
             </div>
         </div>
     </main>
     <footer>
         <div>
-            <a href="https://github.com/Luferov1" target="_blank"><img src="assets/img/git.png" alt="git" class="first"><span>My GitHub</span></a>
+            <a href="https://github.com/Luferov1" target="_blank">
+                <img src="assets/img/git.png" alt="git" class="first"><span>My GitHub</span>
+            </a>
         </div>
         <div>2022</div>
         <div>
-            <a href="https://app.rs.school/" target="_blank"><img src="assets/img/rs_school.png" alt="rs_school" class="second"></a>
+            <a href="https://app.rs.school/" target="_blank">
+                <img src="assets/img/rs_school.png" alt="rs_school" class="second">
+            </a>
         </div>
     </footer>
 </body>
