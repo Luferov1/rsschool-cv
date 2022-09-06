@@ -104,7 +104,7 @@ The function must accept a non-negative integer. If it is zero, it just returns 
  ## Courses: ## 
 
  * HTML and CSS tutorials [schoolsw3](https://schoolsw3.com/html/) (completed)
- * JavaScript manual on [learnjavascript.ru](https://learn.javascript.ru/) 
+ * JavaScript manual on [learnjavascript.ru](https://learn.javascript.ru/) (completed)
  * [**Mimo**](https://getmimo.com/): Web Development (80%)
  * [**Codewars**](https://www.codewars.com) rank: **5 kuy**
  * **RS School** Course «JavaScript/Front-end. Stage 0» (187 place, 904.6/930 total points)
