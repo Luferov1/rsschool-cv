@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luferov CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <ul class="nav-list">
+                    <li class="nav item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav item"><a href="#courses" class="nav-link">Courses</a></li>
+                    <li class="nav item"><a href="#languages" class="nav-link">Languages</a></li>
+                    <li class="nav item"><a href="#summary" class="nav-link">About me</a></li>
+                    <li class="nav item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav item"><a href="#code" class="nav-link">Code example</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <div class="container">
+                <div>
+                <img src="assets/img/avatar.jpg" alt="avatar" class="avatar">
+                </div>
+                <section id="contacts">
+                    <h2>Contact information:</h2>
+                    <ul>
+                        <li>
+                        <span>Email:</span> luferov.dmitry@gmail.com
+                        </li>
+                        <li>
+                        <span>Telegram:</span> @Luferov1
+                        </li>
+                        <li>
+                        <span>Instagram:</span> luferov1
+                        </li>
+                    </ul>
+                </section>
+                <section id="courses">
+                    <h2>Courses:</h2>
+                    <ul>
+                        <li><a href=https://schoolsw3.com/html/index.php target="_blank"><span>HTML</span></a> and 
+                        <a href="https://schoolsw3.com/css/index.php" target="_blank"><span>CSS</span></a> tutorials
+                        (completed)</li>
+                        <li><a href="https://learn.javascript.ru/" target="_blank"><span>JavaScript</span></a> 
+                        manual (completed)</li>
+                        <li><a href="https://getmimo.com/" target="_blank"><span>Mimo:</span></a> 
+                        Web Development (30%)</li>
+                        <li><a href="https://www.codewars.com" target="_blank"><span>Codewars</span></a>
+                        rank: 6 kuy</li>
+                        <li><a href="https://rs.school/" target="_blank"><span>RS School</span></a> Course «JavaScript/Front-end. 
+                        Stage 0» (in progress)</li>
+                    </ul>
+                </section>
+                <section id="languages">
+                    <h2>Languages:</h2>
+                    <ul>
+                        <li><span>English</span> - Intermediate/Upper-intermediate</li>
+                        <li><span>Russian</span> - Native</li>
+                        <li><span>Belarussian</span> - Intermediate</li>
+                    </ul>
+                </section>
+            </div>
+        </aside>
+        <div class="second-part">
+            <div class="container">
+                <section>           
+                    <h2>Dmitry Luferov</h2>
+                </section>
+                <section>
+                    <h2>Junior Frontend Developer</h2>
+                </section>
+                <section id="summary">
+                    <h2>About me:</h2>
+                    <p>
+                        My name is Dmitry. I am 20 years old. I live in Minsk, Belarus. 
+                        I am studying at the BSUIR as an engineer in radio engineering. 
+                        <br>
+                        <br>
+                        When I turned 20, I decided to change my speciality. 
+                        I chose to study Software engineering 
+                        because I think it&apos;s very prestigious and modern job. 
+                        I am an ambitious person and this job suits me. 
+                        Working in a team isn&apos;t a problem for me 
+                        because I have enough communicative and leadership skills. 
+                        My hobby is playing football, so I know what a team is and 
+                        how important is it to help each other 
+                        and to make collective decisions. 
+                        I am cheerful and open-minded person, 
+                        so that&apos;s another reason why I can easily join any team.
+                        <br>
+                        <br>
+                        I met programming at school. 
+                        Also, I had 2 semesters of programming at university. 
+                        I took a small part mobile application development in 2021. 
+                        Now I am studying in RS School.
+                        <br>
+                        <br>
+                        I consider that I have enough personal 
+                        and work skills and to get this job.
+                    </p>
+                </section>
+                <section id="skills">
+                    <h2>Skills and Proficiency:</h2>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript basics</li>
+                        <li>Git</li>
+                        <li>Microsoft office Word</li>
+                        <li>Adobe Photoshop</li>
+                    </ul>
+                </section>
+                <section id="code" class="code">
+                    <h2>Code example:</h2>
+                        <h3>
+                            Human readable duration format
+                        </h3>
+                        <p>Your task in order to complete this Kata is 
+                        to write a function which formats a duration, 
+                        given as a number of seconds, in a human-friendly way.
+                        The function must accept a non-negative integer. 
+                        If it is zero, it just returns "now". 
+                        Otherwise, the duration is expressed as a 
+                        combination of years, days, hours, minutes and seconds.
+                        </p>
+                        <pre class="code-div">
+                            <code>
+function rgb(r, g, b){
+    let result = [];
+    const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+    for (let argument of arguments) {
+    if (argument &lt; 0) result.push('00');
+    else if (argument > 255) result.push('FF');
+    else {
+    let arr = [];
+    do {
+    let remainder = argument % 16;
+    argument = Math.floor(argument / 16);
+    arr.unshift(remainder);
+    } while (argument > 0);
+    for (let i = 0; i &lt; arr.length; i++) {
+        if (arr[i] > 9) arr[i] = letters[arr[i] - 10];
+    }
+    if (arr.length === 1) arr.unshift('0');
+    result.push(arr.join('')); 
+    }
+    }
+    return result.join('');
+}
+                            </code>
+                        </pre>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="https://github.com/Luferov1" target="_blank"><img src="assets/img/git.png" alt="git" class="first"><span>My GitHub</span></a>
+        </div>
+        <div>2022</div>
+        <div>
+            <a href="https://app.rs.school/" target="_blank"><img src="assets/img/rs_school.png" alt="rs_school" class="second"></a>
+        </div>
+    </footer>
+</body>
+</html>
